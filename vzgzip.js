@@ -1,0 +1,904 @@
+外链999!wailian999！
+
+PHP:  range(0, 10, 2);
+来源：http://www.xuanzx.com/163kfsqpqwf.html
+
+JS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://www.sxryk.cn/163pyulhwnw.html
+
+TS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://www.aibaodan.cn/163igzseptj.html
+
+Java: IntStream.range(0, 10).boxed().toList()
+来源：http://www.xuanzx.com/163tnfmwgzh.html
+
+Go:   for i := 0; i < 10; i += 2 { }   // 无区间生成器
+来源：http://www.aibaodan.cn/163gaewoorl.html
+
+Ruby: (0...10).step(2).to_a
+来源：http://www.xuanzx.com/163lgipofja.html
+
+C#:   Enumerable.Range(0, 10).Where(i => i % 2 == 0)
+来源：http://www.aibaodan.cn/163bnygylmd.html
+
+[B12] 跳出多层循环
+来源：http://www.aibaodan.cn/163trynglen.html
+
+Py:   # 无标签跳转：抽成函数用 return
+来源：http://www.aibaodan.cn/163yqsaqlls.html
+
+PHP:  # 无标签：用 goto 或函数返回
+来源：http://www.sxryk.cn/163ygxdoori.html
+
+JS:   outer: for (...) { for (...) { break outer; } }
+来源：http://www.sxryk.cn/163raxupync.html
+
+TS:   outer: for (...) { for (...) { break outer; } }
+来源：http://www.xuanzx.com/163ccplnvex.html
+
+Java: outer: for (...) { for (...) { break outer; } }
+来源：http://www.xuanzx.com/163dsjinslr.html
+
+Go:   # 无标签：用布尔标志或抽成函数
+来源：http://www.xuanzx.com/163wrewgeux.html
+
+Ruby: # 无标签：用 catch/throw 或方法返回
+来源：http://www.sxryk.cn/163rviiaapd.html
+
+C#:   # 无标签：用 goto label 或布尔标志
+来源：http://www.xuanzx.com/163hwhygbgi.html
+
+[B13] 判断是否为数字
+来源：http://www.xuanzx.com/163chpeajjz.html
+
+Py:   isinstance(x, (int, float))
+来源：http://www.xuanzx.com/163hyoksilt.html
+
+PHP:  is_numeric($x)
+来源：http://www.aibaodan.cn/163unqzxecy.html
+
+JS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://www.aibaodan.cn/163frjowfgu.html
+
+TS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://www.aibaodan.cn/163grgllwti.html
+
+Java: x instanceof Number
+来源：http://www.sxryk.cn/163zxmhfdzt.html
+
+Go:   if _, err := strconv.Atoi(s); err == nil { ok = true }
+来源：http://www.sxryk.cn/163riicsqlo.html
+
+Ruby: x.is_a?(Numeric)
+来源：http://www.sxryk.cn/163esrbnist.html
+
+C#:   x is int or double or decimal
+来源：http://www.xuanzx.com/163rzrimttt.html
+
+[B14] 判断值是否在集合内
+来源：http://www.sxryk.cn/163evvkdfxp.html
+
+Py:   x in [1, 2, 3]; x in {"a", "b"}
+来源：http://www.xuanzx.com/163khbrtsxm.html
+
+PHP:  in_array($x, [1, 2, 3], true)
+来源：http://www.aibaodan.cn/163dmjonbdk.html
+
+JS:   [1, 2, 3].includes(x)
+来源：http://www.xuanzx.com/163hzzrbcfj.html
+
+TS:   [1, 2, 3].includes(x)
+来源：http://www.sxryk.cn/163jmzkanlq.html
+
+Java: List.of(1, 2, 3).contains(x)
+来源：http://www.aibaodan.cn/163mbylgpgr.html
+
+Go:   slices.Contains([]int{1, 2, 3}, x)
+来源：http://www.xuanzx.com/163zosarixq.html
+
+Ruby: [1, 2, 3].include?(x)
+来源：http://www.xuanzx.com/163rvlvxffc.html
+
+C#:   new[] { 1, 2, 3 }.Contains(x)
+来源：http://www.sxryk.cn/163ianjjykp.html
+
+[B15] 布尔运算与取反
+来源：http://www.xuanzx.com/163cztcyaui.html
+
+Py:   a and b or not c
+来源：http://www.sxryk.cn/163glcxbxjw.html
+
+PHP:  $a && $b || !$c
+来源：http://www.xuanzx.com/163glkvrvqx.html
+
+JS:   a && b || !c
+来源：http://www.aibaodan.cn/163nhlzuhtc.html
+
+TS:   a && b || !c
+来源：http://www.xuanzx.com/163zxkxabep.html
+
+Java: a && b || !c
+来源：http://www.xuanzx.com/163iqlhbvym.html
+
+Go:   a && b || !c
+来源：http://www.xuanzx.com/163lnufhihj.html
+
+Ruby: a && b || !c
+来源：http://www.sxryk.cn/163bhpfddom.html
+
+C#:   a && b || !c
+来源：http://www.aibaodan.cn/163tmijexmy.html
+
+[B16] 卫语句：不满足条件提前返回
+来源：http://www.sxryk.cn/163fpiufmfk.html
+
+Py:   if not data: return
+来源：http://www.aibaodan.cn/163ujfcjbqi.html
+
+PHP:  if (!$data) { return; }
+来源：http://www.aibaodan.cn/163fajffozp.html
+
+JS:   if (!data) return;
+来源：http://www.aibaodan.cn/163ozisoemt.html
+
+TS:   if (!data) return;
+来源：http://www.aibaodan.cn/163aqqcnihx.html
+
+Java: if (data == null) return;
+来源：http://www.aibaodan.cn/163qyicslco.html
+
+Go:   if data == nil { return }
+来源：http://www.aibaodan.cn/163prszsvog.html
+
+Ruby: return if data.nil?
+来源：http://www.aibaodan.cn/163mqvilihb.html
+
+C#:   if (data == null) return;
+来源：http://www.sxryk.cn/163pncwrprc.html
+
+================================================================================
+来源：http://www.aibaodan.cn/163sxbjbskd.html
+
+C. 函数与作用域
+来源：http://www.sxryk.cn/163xugyhful.html
+
+================================================================================
+来源：http://www.aibaodan.cn/163alvsctlo.html
+
+[C01] 定义函数
+来源：http://www.aibaodan.cn/163wosexyof.html
+
+Py:   def add(a, b): return a + b
+来源：http://www.sxryk.cn/163kstiwgol.html
+
+PHP:  function add(int $a, int $b): int { return $a + $b; }
+来源：http://www.xuanzx.com/163sjybvlbj.html
+
+JS:   function add(a, b) { return a + b; }
+来源：http://www.sxryk.cn/163jrfrsjmt.html
+
+TS:   function add(a: number, b: number): number { return a + b; }
+来源：http://www.xuanzx.com/163fpzqbdzw.html
+
+Java: static int add(int a, int b) { return a + b; }
+来源：http://www.xuanzx.com/163ifzaspwj.html
+
+Go:   func add(a, b int) int { return a + b }
+来源：http://www.aibaodan.cn/163afsapheu.html
+
+Ruby: def add(a, b); a + b; end
+来源：http://www.xuanzx.com/163akylukgi.html
+
+C#:   static int Add(int a, int b) { return a + b; }
+来源：http://www.xuanzx.com/163mgkutgik.html
+
+[C02] 默认参数
+来源：http://www.xuanzx.com/163nnelgcbk.html
+
+Py:   def greet(name="World"): return name
+来源：http://www.aibaodan.cn/163vnctzdws.html
+
+PHP:  function greet($name = "World") { return $name; }
+来源：http://www.aibaodan.cn/163ccubupif.html
+
+JS:   function greet(name = "World") { return name; }
+来源：http://www.xuanzx.com/163belqwxrh.html
+
+TS:   function greet(name: string = "World") { return name; }
+来源：http://www.xuanzx.com/163ycjmuswv.html
+
+Java: // 无默认参数：方法重载或 Optional
+来源：http://www.sxryk.cn/163auxcjfph.html
+
+Go:   // 无默认参数：传零值或另写一个包装函数
+来源：http://www.sxryk.cn/163ssllgnmp.html
+
+Ruby: def greet(name = "World") = name
+来源：http://www.sxryk.cn/163fxudxhwq.html
+
+C#:   string Greet(string name = "World") => name;
+来源：http://www.xuanzx.com/163hqnskjkb.html
+
+[C03] 可变参数
+来源：http://www.xuanzx.com/163ddbsnzdv.html
+
+Py:   def total(*args): return sum(args)
+来源：http://www.xuanzx.com/163mcuvuhdr.html
+
+PHP:  function total(...$nums) { return array_sum($nums); }
+来源：http://www.sxryk.cn/163syfambyu.html
+
+JS:   function total(...nums) { return nums.reduce((a, b) => a + b, 0); }
+来源：http://www.aibaodan.cn/163gynfjpto.html
+
+TS:   function total(...nums: number[]): number { return nums.reduce((a, b) => a + b, 0); }
+来源：http://www.sxryk.cn/163oxdtnoku.html
+
+Java: static int total(int... nums) { return Arrays.stream(nums).sum(); }
+来源：http://www.sxryk.cn/163ncrqeure.html
+
+Go:   func total(nums ...int) int { s := 0; for _, n := range nums { s += n }; return s }
+来源：http://www.sxryk.cn/163gyuirpcy.html
+
+Ruby: def total(*nums); nums.sum; end
+来源：http://www.sxryk.cn/163igjarglu.html
+
+C#:   static int Total(params int[] nums) => nums.Sum();
+来源：http://www.xuanzx.com/163myobzxml.html
+
+[C04] 命名参数 / 关键字参数
+来源：http://www.aibaodan.cn/163ylepklmh.html
+
+Py:   def f(a, b, *, c=0): ...    # 调用 f(1, 2, c=3)
+来源：http://www.xuanzx.com/163qomijdzs.html
+
+PHP:  f(a: 1, b: 2)             // PHP 8 命名参数
+来源：http://www.xuanzx.com/163ivccggax.html
+
+JS:   // 无命名参数：传配置对象 function f({ a, b }) {}
+来源：http://www.aibaodan.cn/163tzudhorz.html
+
+TS:   f({ a: 1, b: 2 })          // 同上
+来源：http://www.xuanzx.com/163ypolmoih.html
+
+Java: // 无：用 Builder 模式或 record
+来源：http://www.xuanzx.com/163poxctncg.html
+
+Go:   // 无：用配置结构体参数
+来源：http://www.aibaodan.cn/163cecdlbfn.html
+
+Ruby: f(a: 1, b: 2)
+来源：http://www.sxryk.cn/163yhsrvwzh.html
+
+C#:   f(a: 1, b: 2)
+来源：http://www.xuanzx.com/163oxlpnfne.html
+
+[C05] 返回多个值
+来源：http://www.aibaodan.cn/163ubvxxsxc.html
+
+Py:   return a, b
+来源：http://www.sxryk.cn/163pwtnpetr.html
+
+PHP:  return [$a, $b];
+来源：http://www.xuanzx.com/163phglkejg.html
+
+JS:   return [a, b];             // 或 return { a, b };
+来源：http://www.aibaodan.cn/163jegvalqu.html
+
+TS:   return { a, b };
+来源：http://www.xuanzx.com/163ktlcitas.html
+
+Java: record Pair(int a, int b) {}  // 或 return new int[]{a, b};
+来源：http://www.xuanzx.com/163cuobdres.html
+
+Go:   return a, b
+来源：http://www.sxryk.cn/163iannautu.html
+
+Ruby: return a, b
+来源：http://www.sxryk.cn/163ghvlxftg.html
+
+C#:   return (a, b);              // ValueTuple
+来源：http://www.aibaodan.cn/163zvygfqmb.html
+
+[C06] 匿名函数 / lambda
+来源：http://www.sxryk.cn/163skbudfje.html
+
+Py:   square = lambda x: x * x
+来源：http://www.sxryk.cn/163mlbigrpn.html
+
+PHP:  $square = fn($x) => $x * $x;
+来源：http://www.sxryk.cn/163ieiszxvd.html
+
+JS:   const square = x => x * x;
+来源：http://www.sxryk.cn/163uhvpwwzs.html
+
+TS:   const square = (x: number): number => x * x;
+来源：http://www.xuanzx.com/163gjnooxvn.html
+
+Java: Function<Integer, Integer> sq = x -> x * x;
+来源：http://www.sxryk.cn/163ubfciodo.html
+
+Go:   sq := func(x int) int { return x * x }
+来源：http://www.aibaodan.cn/163jtzfpqfd.html
+
+Ruby: square = ->(x) { x * x }
+来源：http://www.sxryk.cn/163iywosutu.html
+
+C#:   Func<int, int> square = x => x * x;
+来源：http://www.xuanzx.com/163lwrfvkqq.html
+
+[C07] 把函数作为参数传入
+来源：http://www.xuanzx.com/163burqekkt.html
+
+Py:   list(map(str.upper, arr)); sorted(arr, key=len)
+来源：http://www.xuanzx.com/163egvivchh.html
+
+PHP:  array_map("strtoupper", $arr);
+来源：http://www.aibaodan.cn/163sbfueveh.html
+
+JS:   arr.map(String).sort((a, b) => a.length - b.length)
+来源：http://www.xuanzx.com/163xtbzujmc.html
+
+TS:   arr.map(String)
+来源：http://www.aibaodan.cn/163xlaajywq.html
+
+Java: arr.stream().map(String::toUpperCase).toList()
+来源：http://www.aibaodan.cn/163rhjsnsze.html
+
+Go:   // 无 map 内置：手写循环或用 golang.org/x/exp/slices
+来源：http://www.aibaodan.cn/163foqgnebh.html
+
+Ruby: arr.map(&:upcase)
+来源：http://www.sxryk.cn/163uogzuoha.html
+
+C#:   arr.Select(s => s.ToUpper())
+来源：http://www.sxryk.cn/163gzexrote.html
+
+[C08] 闭包
+来源：http://www.xuanzx.com/163dmdagxta.html
+
+Py:   from itertools import count; inc = lambda c=count(1): next(c)   # 计数器
+来源：http://www.aibaodan.cn/163gqofwhyi.html
+
+PHP:  function counter() { $n = 0; return function () use (&$n) { return ++$n; }; }
+来源：http://www.xuanzx.com/163ymjopxnp.html
+
+JS:   function counter() { let n = 0; return () => ++n; }
+来源：http://www.sxryk.cn/163usrrvbjw.html
+
+TS:   function counter(): () => number { let n = 0; return () => ++n; }
+来源：http://www.aibaodan.cn/163eovgcfga.html
+
+Java: // 只能捕获 effectively final：用 int[] 或 AtomicInteger
+来源：http://www.aibaodan.cn/163zyrqvhec.html
+
+Go:   func counter() func() int { n := 0; return func() int { n++; return n } }
+来源：http://www.sxryk.cn/163ogmkcnnt.html
+
+Ruby: def counter; n = 0; -> { n += 1 }; end
+来源：http://www.aibaodan.cn/163bgxsfkua.html
+
+C#:   static Func<int> Counter() { int n = 0; return () => ++n; }
+来源：http://www.sxryk.cn/163gndczymw.html
+
+[C09] 递归
+来源：http://www.xuanzx.com/163zdrrlutc.html
+
+Py:   def fact(n): return 1 if n <= 1 else n * fact(n - 1)
+来源：http://www.xuanzx.com/163yybyvkwt.html
+
+PHP:  function fact(int $n): int { return $n <= 1 ? 1 : $n * fact($n - 1); }
+来源：http://www.sxryk.cn/163fgjfucsq.html
+
+JS:   const fact = n => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://www.sxryk.cn/163dlspoiqz.html
+
+TS:   const fact = (n: number): number => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://www.sxryk.cn/163gzjlupmp.html
+
+Java: static int fact(int n) { return n <= 1 ? 1 : n * fact(n - 1); }
+来源：http://www.aibaodan.cn/163eagmmqav.html
+
+Go:   func fact(n int) int { if n <= 1 { return 1 }; return n * fact(n-1) }
+来源：http://www.aibaodan.cn/163xmuptjpt.html
+
+Ruby: def fact(n) = n <= 1 ? 1 : n * fact(n - 1)
+来源：http://www.xuanzx.com/163xhemhtqx.html
+
+C#:   static int Fact(int n) => n <= 1 ? 1 : n * Fact(n - 1);
+来源：http://www.xuanzx.com/163rvqdhtjb.html
+
+[C10] 变量作用域
+来源：http://www.sxryk.cn/163iiehlfbs.html
+
+Py:   函数内赋值即局部；改外层需 global / nonlocal
+来源：http://www.xuanzx.com/163fvpjmfps.html
+
+PHP:  函数内默认看不到外部变量，需 global 或 use
+来源：http://www.aibaodan.cn/163uivstmll.html
+
+JS:   let/const 块级作用域，var 函数级作用域
+来源：http://www.sxryk.cn/163sgsmzipc.html
+
+TS:   同 JS
+来源：http://www.aibaodan.cn/163hypnxygr.html
+
+Java: 方法内为块级作用域
+来源：http://www.aibaodan.cn/163bchryiyl.html
+
+Go:   花括号块级作用域
+来源：http://www.xuanzx.com/163bgykstba.html
+
+Ruby: 局部变量 / @实例 / @@类 / $全局
+来源：http://www.xuanzx.com/163yydhxobm.html
+
+C#:   块级作用域
+来源：http://www.aibaodan.cn/163xigndijc.html
+
+[C11] 模块导入与导出
+来源：http://www.xuanzx.com/163nhjhvrdm.html
+
+Py:   from module import func
+来源：http://www.aibaodan.cn/163vvnxlpdb.html
+
+PHP:  require "file.php";  或 use App\Service;
+来源：http://www.aibaodan.cn/163frkolfdj.html
+
+JS:   export default function f() {};  import f from "./m.js";
+来源：http://www.aibaodan.cn/163kgbquuww.html
+
+TS:   export function f(): void {};  import { f } from "./m";
+来源：http://www.aibaodan.cn/163zitypysm.html
+
+Java: import java.util.List;
+来源：http://www.xuanzx.com/163oqnqkutm.html
+
+Go:   import "fmt"          // 之后用 fmt.Println
+来源：http://www.aibaodan.cn/163zzuzpxnb.html
+
+Ruby: require "json"; require_relative "./util"
+来源：http://www.sxryk.cn/163yxkxfrcy.html
+
+C#:   using System.Text;
+来源：http://www.aibaodan.cn/163cpdiafjx.html
+
+[C12] 立即执行函数 IIFE
+来源：http://www.sxryk.cn/163vzpknvvf.html
+
+Py:   (lambda: print("run"))()
+来源：http://www.sxryk.cn/163urgulldp.html
+
+PHP:  (function () { echo "run"; })();
+来源：http://www.sxryk.cn/163xjmftcky.html
+
+JS:   (() => { console.log("run"); })();
+来源：http://www.xuanzx.com/163emijhbwb.html
+
+TS:   (() => { console.log("run"); })();
+来源：http://www.sxryk.cn/163quurlbkr.html
+
+Java: // 无 IIFE：用 static { } 静态初始化块
+来源：http://www.sxryk.cn/163hrerdhmc.html
+
+Go:   func() { fmt.Println("run") }()
+来源：http://www.xuanzx.com/163ilffssjl.html
+
+Ruby: -> { puts "run" }.call
+来源：http://www.sxryk.cn/163cyqhvdqe.html
+
+C#:   // 无 IIFE：用静态构造函数
+来源：http://www.xuanzx.com/163jkltmlda.html
+
+[C13] 类型声明 / 类型注解
+来源：http://www.aibaodan.cn/163qhqwsktg.html
+
+Py:   def add(a: int, b: int) -> int: return a + b
+来源：http://www.sxryk.cn/163qdjtbgoq.html
+
+PHP:  function add(int $a, int $b): int { return $a + $b; }
+来源：http://www.aibaodan.cn/163lvkaetjx.html
+
+JS:   // 无类型（可用 JSDoc 注释）
+来源：http://www.aibaodan.cn/163egctxqlj.html
+
+TS:   function add(a: number, b: number): number { return a + b; }
+来源：http://www.aibaodan.cn/163qzxkvxos.html
+
+Java: int add(int a, int b) { return a + b; }
+来源：http://www.xuanzx.com/163vgngxahq.html
+
+Go:   func add(a, b int) int
+来源：http://www.sxryk.cn/163nxtlegco.html
+
+Ruby: # 无类型（可选用 Sorbet / RBS）
+来源：http://www.aibaodan.cn/163mtvqwkqm.html
+
+C#:   int Add(int a, int b) => a + b;
+来源：http://www.xuanzx.com/163owmjenry.html
+
+[C14] 泛型函数
+来源：http://www.aibaodan.cn/163ibzhzwlb.html
+
+Py:   from typing import TypeVar; T = TypeVar("T"); def first(items: list[T]) -> T: ...
+来源：http://www.sxryk.cn/163jpwmflfc.html
+
+PHP:  // 无泛型
+来源：http://www.xuanzx.com/163mnvjiekk.html
+
+JS:   // 无泛型
+来源：http://www.xuanzx.com/163xmoisako.html
+
+TS:   function first<T>(items: T[]): T | undefined { return items[0]; }
+来源：http://www.xuanzx.com/163sgpqptmy.html
+
+Java: static <T> T first(List<T> items) { return items.get(0); }
+来源：http://www.sxryk.cn/163juavgzmx.html
+
+Go:   func First[T any](items []T) T { return items[0] }
+来源：http://www.xuanzx.com/163zkmohlky.html
+
+Ruby: # 无泛型
+来源：http://www.sxryk.cn/163ucnvngjj.html
+
+C#:   static T First<T>(List<T> items) => items[0];
+来源：http://www.sxryk.cn/163kbkkcwpf.html
+
+[C15] 解构 / 展开参数
+来源：http://www.xuanzx.com/163ofeqgdhz.html
+
+Py:   def f(a, b): ...;  f(*[1, 2]);  f(**{"a": 1, "b": 2})
+来源：http://www.aibaodan.cn/163yolikdkx.html
+
+PHP:  [$a, $b] = $pair;
+来源：http://www.xuanzx.com/163kdqpjhea.html
+
+JS:   const { a, b } = obj;  function f({ a, b }) {}
+来源：http://www.sxryk.cn/163aatyvyvp.html
+
+TS:   function f({ a, b }: { a: number; b: number }) {}
+来源：http://www.xuanzx.com/163fuqrfebd.html
+
+Java: // 无解构
+来源：http://www.xuanzx.com/163zhbgkgdt.html
+
+Go:   // 无解构
+来源：http://www.sxryk.cn/163lmhqqntm.html
+
+Ruby: a, b = pair
+来源：http://www.sxryk.cn/163sxgpkaaw.html
+
+C#:   var (a, b) = pair;
+来源：http://www.aibaodan.cn/163yrsofjtd.html
+
+[C16] 函数 / 方法重载
+来源：http://www.xuanzx.com/163hkskgxjh.html
+
+Py:   # 无重载：用默认参数或 *args 变通
+来源：http://www.xuanzx.com/163mbbjzxna.html
+
+PHP:  // 无重载
+来源：http://www.aibaodan.cn/163rhmrplhg.html
+
+JS:   // 无重载：靠 arguments.length 分支
+来源：http://www.aibaodan.cn/163xlhguijx.html
+
+TS:   // 用联合类型或重载签名声明
+来源：http://www.xuanzx.com/163rhffcjha.html
+
+Java: void f(int a) {}  void f(String a) {}
+来源：http://www.aibaodan.cn/163dyamgjjs.html
+
+Go:   // 无重载：用不同函数名
+来源：http://www.xuanzx.com/163bipyuzhe.html
+
+Ruby: # 无重载：靠动态参数
+来源：http://www.sxryk.cn/163njivyvhx.html
+
+C#:   void F(int a) {}  void F(string a) {}
+来源：http://www.sxryk.cn/163eavhyspd.html
+
+================================================================================
+来源：http://www.xuanzx.com/163wlhbsyly.html
+
+D. 数组 / 列表 / 集合
+来源：http://www.xuanzx.com/163xfxbehrb.html
+
+================================================================================
+来源：http://www.sxryk.cn/163syxxmqyd.html
+
+[D01] 创建数组 / 列表
+来源：http://www.aibaodan.cn/163olbyyfgh.html
+
+Py:   arr = [1, 2, 3];  empty = []
+来源：http://www.aibaodan.cn/163sbjsefwt.html
+
+PHP:  $arr = [1, 2, 3];  $empty = [];
+来源：http://www.xuanzx.com/163noqbgifc.html
+
+JS:   const arr = [1, 2, 3];  const empty = [];
+来源：http://www.aibaodan.cn/163pvfaqkvl.html
+
+TS:   const arr: number[] = [1, 2, 3];
+来源：http://www.aibaodan.cn/163nyonrets.html
+
+Java: var arr = new int[]{1, 2, 3};  var list = new ArrayList<>(List.of(1, 2, 3));
+来源：http://www.sxryk.cn/163tjuyrtgo.html
+
+Go:   arr := []int{1, 2, 3}
+来源：http://www.aibaodan.cn/163zfcudjwa.html
+
+Ruby: arr = [1, 2, 3]
+来源：http://www.sxryk.cn/163qguiauam.html
+
+C#:   var arr = new[] { 1, 2, 3 };  var list = new List<int> { 1, 2, 3 };
+来源：http://www.sxryk.cn/163nwjbhais.html
+
+[D02] 追加元素到末尾
+来源：http://www.aibaodan.cn/163bvwhzpfx.html
+
+Py:   arr.append(4); arr.extend([5, 6])
+来源：http://www.aibaodan.cn/163lmlcbdtf.html
+
+PHP:  $arr[] = 4; array_push($arr, 5);
+来源：http://www.sxryk.cn/163eqcqgnrc.html
+
+JS:   arr.push(4);
+来源：http://www.sxryk.cn/163bfjadgop.html
+
+TS:   arr.push(4);
+来源：http://www.sxryk.cn/163ctezuher.html
+
+Java: list.add(4);
+来源：http://www.sxryk.cn/163yvebcufe.html
+
+Go:   arr = append(arr, 4)
+来源：http://www.xuanzx.com/163jtoyxdec.html
+
+Ruby: arr << 4; arr.push(5)
+来源：http://www.aibaodan.cn/163brhbldrm.html
+
+C#:   list.Add(4);
+来源：http://www.aibaodan.cn/163wqwtwdvw.html
+
+[D03] 在指定位置插入元素
+来源：http://www.sxryk.cn/163hpgwfdwo.html
+
+Py:   arr.insert(0, 0)
+来源：http://www.aibaodan.cn/163yoeuqepc.html
+
+PHP:  array_splice($arr, 0, 0, [0]);
+来源：http://www.aibaodan.cn/163ndkwvhnn.html
+
+JS:   arr.splice(0, 0, 0);  arr.unshift(0)   // 插到头部
+来源：http://www.sxryk.cn/163ivndetoz.html
+
+TS:   arr.splice(0, 0, 0);
+来源：http://www.sxryk.cn/163twepvapq.html
+
+Java: list.add(0, 0);
+来源：http://www.aibaodan.cn/163qwlsmlml.html
+
+Go:   arr = append([]int{0}, arr...)
+来源：http://www.xuanzx.com/163ajphwfia.html
+
+Ruby: arr.insert(0, 0); arr.unshift(0)
+来源：http://www.sxryk.cn/163xuzbhkpp.html
+
+C#:   list.Insert(0, 0);
+来源：http://www.aibaodan.cn/163doqfllmm.html
+
+[D04] 删除元素
+来源：http://www.aibaodan.cn/163mxjbarxo.html
+
+Py:   del arr[0]; arr.pop(); arr.remove(3)
+来源：http://www.aibaodan.cn/163hcdsxjkz.html
+
+PHP:  array_splice($arr, 0, 1); array_pop($arr);
+来源：http://www.xuanzx.com/163ovnsgcvg.html
+
+JS:   arr.splice(0, 1); arr.pop(); arr.shift();
+来源：http://www.sxryk.cn/163wsoyzmhk.html
+
+TS:   arr.splice(0, 1);
+来源：http://www.sxryk.cn/163ttwpwffk.html
+
+Java: list.remove(0); list.removeIf(x -> x == 3);
+来源：http://www.aibaodan.cn/163uewpkdbb.html
+
+Go:   arr = append(arr[:0], arr[1:]...)
+来源：http://www.xuanzx.com/163lgsmkfgc.html
+
+Ruby: arr.delete_at(0); arr.delete(3)
+来源：http://www.xuanzx.com/163bvpuygmm.html
+
+C#:   list.RemoveAt(0); list.Remove(3);
+来源：http://www.sxryk.cn/163rcyhvtar.html
+
+[D05] 访问与修改元素
+来源：http://www.sxryk.cn/163rggqdqcl.html
+
+Py:   arr[0]; arr[-1]; arr[0] = 9
+来源：http://www.xuanzx.com/163mhdujzht.html
+
+PHP:  $arr[0]; end($arr); $arr[0] = 9;
+来源：http://www.sxryk.cn/163rvnpnxwd.html
+
+JS:   arr[0]; arr.at(-1); arr[0] = 9;
+来源：http://www.aibaodan.cn/163rvrucafa.html
+
+TS:   arr[0]; arr.at(-1);
+来源：http://www.xuanzx.com/163fzobvlhw.html
+
+Java: list.get(0); list.set(0, 9);
+来源：http://www.xuanzx.com/163vhhdcrng.html
+
+Go:   arr[0]; arr[0] = 9
+来源：http://www.sxryk.cn/163yyvxgcvs.html
+
+Ruby: arr[0]; arr[-1]; arr[0] = 9
+来源：http://www.aibaodan.cn/163yyfiupwy.html
+
+C#:   list[0]; list[^1]; list[0] = 9;
+来源：http://www.aibaodan.cn/163rwmcxecj.html
+
+[D06] 数组长度
+来源：http://www.sxryk.cn/163ibagkgcq.html
+
+Py:   len(arr)
+来源：http://www.xuanzx.com/163jqovcyjj.html
+
+PHP:  count($arr);
+来源：http://www.xuanzx.com/163pkibghsz.html
+
+JS:   arr.length
+来源：http://www.sxryk.cn/163epajqkxc.html
+
+TS:   arr.length
+来源：http://www.xuanzx.com/163ppgpashz.html
+
+Java: list.size();
+来源：http://www.aibaodan.cn/163mocmeytm.html
+
+Go:   len(arr)
+来源：http://www.sxryk.cn/163zuazcmio.html
+
+Ruby: arr.length; arr.size
+来源：http://www.aibaodan.cn/163xxnireyp.html
+
+C#:   list.Count;
+来源：http://www.xuanzx.com/163hmmbcmge.html
+
+[D07] 切片 / 取子数组
+来源：http://www.xuanzx.com/163verrwywe.html
+
+Py:   arr[1:4]; arr[:3]; arr[::2]
+来源：http://www.sxryk.cn/163uonajjqh.html
+
+PHP:  array_slice($arr, 1, 3);
+来源：http://www.sxryk.cn/163coocqxlx.html
+
+JS:   arr.slice(1, 4);
+来源：http://www.sxryk.cn/163dmmxkkhi.html
+
+TS:   arr.slice(1, 4);
+来源：http://www.sxryk.cn/163hotfhsxx.html
+
+Java: list.subList(1, 4);
+来源：http://www.sxryk.cn/163ectyncrk.html
+
+Go:   arr[1:4]
+来源：http://www.sxryk.cn/163yabtizoc.html
+
+Ruby: arr[1, 3]
+来源：http://www.sxryk.cn/163pzvkxaxw.html
+
+C#:   list.GetRange(1, 3);
+来源：http://www.sxryk.cn/163clufomou.html
+
+[D08] 合并两个数组
+来源：http://www.aibaodan.cn/163gcjvmwia.html
+
+Py:   a + b;  a.extend(b)
+来源：http://www.xuanzx.com/163vovrxfto.html
+
+PHP:  array_merge($a, $b);
+来源：http://www.aibaodan.cn/163ojyaqxur.html
+
+JS:   [...a, ...b];  a.concat(b);
+来源：http://www.aibaodan.cn/163whyaiuer.html
+
+TS:   [...a, ...b];
+来源：http://www.xuanzx.com/163yqlvscay.html
+
+Java: Stream.concat(a.stream(), b.stream()).toList()
+来源：http://www.xuanzx.com/163uljvjzsm.html
+
+Go:   append(a, b...)
+来源：http://www.xuanzx.com/163xsudmtxa.html
+
+Ruby: a + b;  a.concat(b)
+来源：http://www.sxryk.cn/163ydelsces.html
+
+C#:   a.Concat(b).ToList()
+来源：http://www.xuanzx.com/163dxwbmxxh.html
+
+[D09] 排序（升序）
+来源：http://www.aibaodan.cn/163nfkvshgx.html
+
+Py:   sorted(arr);  arr.sort()
+来源：http://www.sxryk.cn/163socxnbcm.html
+
+PHP:  sort($arr);
+来源：http://www.aibaodan.cn/163uemktrgw.html
+
+JS:   [...arr].sort((x, y) => x - y)     // 默认按字符串比较，数字必须给比较器
+来源：http://www.sxryk.cn/163xyldkphf.html
+
+TS:   [...arr].sort((x, y) => x - y);
+来源：http://www.aibaodan.cn/163msxhuzgr.html
+
+Java: Collections.sort(list);  list.sort(null);
+来源：http://www.xuanzx.com/163eimiatro.html
+
+Go:   sort.Ints(arr);  slices.Sort(arr)
+来源：http://www.aibaodan.cn/163vfcqyrme.html
+
+Ruby: arr.sort
+来源：http://www.sxryk.cn/163jynceksi.html
+
+C#:   list.Sort();
+来源：http://www.aibaodan.cn/163wrjzvisq.html
+
+[D10] 自定义排序（按字段 / 多条件）
+来源：http://www.aibaodan.cn/163vgezxuwv.html
+
+Py:   arr.sort(key=lambda x: x["age"]);  sorted(arr, key=len, reverse=True)
+来源：http://www.aibaodan.cn/163orwkyzjd.html
+
+PHP:  usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://www.xuanzx.com/163jequcqdi.html
+
+JS:   arr.sort((a, b) => a.age - b.age)
+来源：http://www.aibaodan.cn/163xzvihfoz.html
+
+TS:   arr.sort((a, b) => a.age - b.age)
+来源：http://www.sxryk.cn/163xlunbjsy.html
+
+Java: list.sort(Comparator.comparing(Person::age));
+来源：http://www.sxryk.cn/163qvzjofyo.html
+
+Go:   sort.Slice(items, func(i, j int) bool { return items[i].Age < items[j].Age })
+来源：http://www.sxryk.cn/163sjdwkley.html
+
+Ruby: arr.sort_by { |x| x[:age] }
+来源：http://www.aibaodan.cn/163spiwlakx.html
+
+C#:   list.Sort((a, b) => a.Age.CompareTo(b.Age));
+来源：http://www.sxryk.cn/163xahynnkf.html
+
+[D11] 反转数组
+来源：http://www.xuanzx.com/163dylohgxt.html
+
+Py:   arr[::-1];  arr.reverse()
+来源：http://www.sxryk.cn/163wrkziiyg.html
+
+PHP:  array_reverse($arr);
+来源：http://www.xuanzx.com/163elqzcmjx.html
+
+JS:   [...arr].reverse();  arr.toReversed()
+来源：http://www.xuanzx.com/163koedxcuh.html
+
+TS:   [...arr].reverse();
+来源：http://www.aibaodan.cn/163tbhiqcsz.html
+
+Java: Collections.reverse(list);
+来源：http://www.aibaodan.cn/163wqbirzpw.html
+
+Go:   slices.Reverse(arr)
+来源：http://www.aibaodan.cn/163llfbxpqu.html
+
+Ruby: arr.reverse
+来源：http://www.sxryk.cn/163mfjqetlj.html
+
+
+<!-- 参考信息 -->
